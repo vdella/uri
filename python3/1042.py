@@ -1,7 +1,6 @@
 original_list = [int(element) for element in input().split()]
-# Também poderia ser feito com list(map(int, input().split()))
 
-copied_list = original_list.copy()  # Sempre dê nomes que indiquem propósito das variáveis!
+copied_list = original_list.copy()  # Needed to avoid reference copy.
 result = list()
 
 for _ in range(len(original_list)):
